@@ -1,0 +1,7 @@
+{
+  "collection": "device_tokens",
+  "meta": null,
+  "schema": {
+    "name": "device_tokens"
+  }
+}

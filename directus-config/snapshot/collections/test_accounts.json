@@ -1,0 +1,7 @@
+{
+  "collection": "test_accounts",
+  "meta": null,
+  "schema": {
+    "name": "test_accounts"
+  }
+}

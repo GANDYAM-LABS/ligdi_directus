@@ -1,0 +1,15 @@
+{
+  "collection": "device_tokens",
+  "field": "user_id",
+  "related_collection": "users",
+  "meta": null,
+  "schema": {
+    "table": "device_tokens",
+    "column": "user_id",
+    "foreign_key_table": "users",
+    "foreign_key_column": "id",
+    "constraint_name": "device_tokens_user_id_fkey",
+    "on_update": "NO ACTION",
+    "on_delete": "CASCADE"
+  }
+}

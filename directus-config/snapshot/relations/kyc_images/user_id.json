@@ -1,0 +1,15 @@
+{
+  "collection": "kyc_images",
+  "field": "user_id",
+  "related_collection": "users",
+  "meta": null,
+  "schema": {
+    "table": "kyc_images",
+    "column": "user_id",
+    "foreign_key_table": "users",
+    "foreign_key_column": "id",
+    "constraint_name": "kyc_images_user_id_fkey",
+    "on_update": "CASCADE",
+    "on_delete": "CASCADE"
+  }
+}

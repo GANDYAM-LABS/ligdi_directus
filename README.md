@@ -1,1 +1,0 @@
-# ligdi_directus

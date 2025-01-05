@@ -1,0 +1,23 @@
+{
+  "collection": "device_tokens",
+  "field": "user_id",
+  "type": "uuid",
+  "meta": null,
+  "schema": {
+    "name": "user_id",
+    "table": "device_tokens",
+    "data_type": "uuid",
+    "default_value": null,
+    "max_length": null,
+    "numeric_precision": null,
+    "numeric_scale": null,
+    "is_nullable": true,
+    "is_unique": true,
+    "is_primary_key": false,
+    "is_generated": false,
+    "generation_expression": null,
+    "has_auto_increment": false,
+    "foreign_key_table": "users",
+    "foreign_key_column": "id"
+  }
+}
