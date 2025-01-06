@@ -57,15 +57,15 @@ else
 fi
 
 # Start Directus
-# echo "Starting Directus..."
-# # Check if port 8055 is in use and kill the process using it
-# if lsof -i:8055 -t >/dev/null; then
-#     echo "Port 8055 is in use. Killing the process using it..."
-#     kill -9 $(lsof -i:8055 -t)
-#     echo "Process killed."
-# fi
+echo "Starting Directus..."
+# Check if port 8055 is in use and kill the process using it
+if lsof -i:8055 -t >/dev/null; then
+    echo "Port 8055 is in use. Killing the process using it..."
+    kill -9 $(lsof -i:8055 -t)
+    echo "Process killed."
+fi
 
 nohup npx --yes directus start &
-# npx directus-sync -u http://127.0.0.1:8055 -e $ADMIN_EMAIL  -p $ADMIN_PASSWORD  push 
+#npx directus-sync -u http://127.0.0.1:8055 -e $ADMIN_EMAIL  -p $ADMIN_PASSWORD  push --force
 
 
