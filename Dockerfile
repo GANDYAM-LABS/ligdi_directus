@@ -37,7 +37,7 @@ COPY . .
 #     fi \
 # done
 # Expose the port that the application listens on.
-EXPOSE 8055
+EXPOSE 8000
 
 RUN  bash ./deploy.sh
 # # Run the application.
