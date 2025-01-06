@@ -66,6 +66,6 @@ fi
 # fi
 
 nohup npx --yes directus start &
-npx directus-sync -u http://127.0.0.1:8055 -e $ADMIN_EMAIL  -p $ADMIN_PASSWORD  push 
+# npx directus-sync -u http://127.0.0.1:8055 -e $ADMIN_EMAIL  -p $ADMIN_PASSWORD  push 
 
 
