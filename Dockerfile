@@ -41,6 +41,5 @@ EXPOSE 8055
 
 RUN  bash ./deploy.sh
 # # Run the application.
-# RUN nohup npx --yes directus start & 
-# RUN npx directus-sync -u http://127.0.0.1:8055 -e $ADMIN_EMAIL  -p $ADMIN_PASSWORD  push --force
-CMD bash -c 'if lsof -i:8055 -t >/dev/null; then echo "Port 8055 is in use. Killing the process using it..."; kill -9 $(lsof -i:8055 -t); echo "Process killed."; fi && npx directus start'
+# RUN nohup npx --yes directus start & npx directus-sync -u http://127.0.0.1:8055 -e $ADMIN_EMAIL  -p $ADMIN_PASSWORD  push --force
+# CMD bash -c 'if lsof -i:8055 -t >/dev/null; then echo "Port 8055 is in use. Killing the process using it..."; kill -9 $(lsof -i:8055 -t); echo "Process killed."; fi && npx directus start'
