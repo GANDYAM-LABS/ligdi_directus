@@ -27,12 +27,7 @@ RUN for dir in extensions/*; do \
 done
 # Expose the port that the application listens on.
 EXPOSE 8056
-RUN if npx --yes directus users passwd --email=$ADMIN_EMAIL --password=$ADMIN_PASSWORD; then \
-    echo "Directus admin user installed."; \
-else \
-    echo "Error: Directus admin user already installed."; \
-fi
-
+RUN bash ./deploy.sh
 # Run the application.
 # Run the application with increased memory limit.
 # ENV NODE_OPTIONS="--max-old-space-size=4096"
