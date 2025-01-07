@@ -32,7 +32,7 @@ services:
     build:
       context: .
     ports:
-      - 8055:8055    
+      - 8055:8055
     volumes:
       - ./extensions:/usr/src/app/extensions 
 
