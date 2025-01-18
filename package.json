@@ -1,6 +1,6 @@
 {
   "engines": {
-    "node": "18.x"
+    "node": "20.x"
   },
   "dependencies": {
     "@directus/sdk": "^18.0.3",
